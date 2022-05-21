@@ -68,6 +68,12 @@ header button {
     max-height: 2rem;
 }
 
+.card {
+    border-radius: 10px;
+    background-color: white;
+    border-left: 10px solid #6cffbf;
+}
+
 .sidebar {
     grid-area: 1 / 1 / 3 / 2;
     background-color: rgb(179, 149, 226);
@@ -101,7 +107,7 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     padding: 20px;
-    column-gap: 10px;
+    column-gap: 20px;
 }
 
 main .left-side {
@@ -118,6 +124,18 @@ main .left-side h3 {
     grid-column-end: 3;
 }
 
-main .left-side .card {
-    background-color: white;
+main .right-side h3 {
+    margin: 0px;
+}
+
+main .right-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 50px;
+}
+
+main .right-side div {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    row-gap: 20px;
 }
