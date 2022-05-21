@@ -98,4 +98,26 @@ header button {
 main {
     grid-area: 2 / 2 / 3 / 3;
     background-color: #d8d8d8;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    column-gap: 10px;
+}
+
+main .left-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+main .left-side h3 {
+    margin: 0px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+main .left-side .card {
+    background-color: white;
 }
