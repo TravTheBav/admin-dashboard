@@ -141,19 +141,23 @@ main .right-side {
     row-gap: 50px;
 }
 
-main .right-side .announcements,
-main .right-side .trending {
+.announcements, .trending {
     display: grid;
     grid-template-rows: max-content 1fr;
     row-gap: 20px;
 }
 
-.announcements .card,
-.trending .card {
+.announcements .card {
     display: grid;
     grid-auto-rows: 1fr;
     row-gap: 20px;
     padding: 20px 40px;
+}
+
+.trending .card {
+    display: grid;
+    grid-auto-rows: 1fr;
+    padding: 0px 40px;
 }
 
 .sub-section * {
@@ -161,10 +165,20 @@ main .right-side .trending {
     row-gap: 0px;
 }
 
-.sub-section p {
+.sub-section.announcements {
+    border-bottom: solid 2px #d8d8d8;
+}
+
+.sub-section.announcements:last-child {
+    border-bottom: none;
+}
+
+.sub-section.announcements p {
     margin-bottom: 14px;
 }
 
-.sub-section {
-    border-bottom: solid 2px #d8d8d8;
+.sub-section.trending {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    align-items: center;
 }
