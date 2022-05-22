@@ -40,6 +40,9 @@ header .top-bar > * {
     height: 1.5rem;
     width: max(200px, 50%);
     margin-right: 5vw;
+    border: none;
+    border-radius: 12px;
+    background-color: #d8d8d8;
 }
 
 header .bottom-left {
@@ -75,6 +78,7 @@ header button {
     background-color: white;
     border-left: 10px solid #6cffbf;
     box-shadow: 4px 4px 4px #8f8f8f;
+    padding: 1rem;
 }
 
 .sidebar {
@@ -137,8 +141,30 @@ main .right-side {
     row-gap: 50px;
 }
 
-main .right-side div {
+main .right-side .announcements,
+main .right-side .trending {
     display: grid;
     grid-template-rows: max-content 1fr;
     row-gap: 20px;
+}
+
+.announcements .card,
+.trending .card {
+    display: grid;
+    grid-auto-rows: 1fr;
+    row-gap: 20px;
+    padding: 20px 40px;
+}
+
+.sub-section * {
+    margin: 0px;
+    row-gap: 0px;
+}
+
+.sub-section p {
+    margin-bottom: 14px;
+}
+
+.sub-section {
+    border-bottom: solid 2px #d8d8d8;
 }
