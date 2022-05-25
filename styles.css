@@ -49,6 +49,7 @@ header .top-bar > *:nth-child(3) {
     border: none;
     border-radius: 12px;
     background-color: #d8d8d8;
+    text-indent: 1rem;
 }
 
 header .bottom-left {
@@ -84,6 +85,17 @@ header button {
     border-left: 10px solid #6cffbf;
     box-shadow: 4px 4px 4px #8f8f8f;
     padding: 1rem;
+    position: relative;
+}
+
+.card > .wrapper {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.wrapper > img {
+    margin-right: 1rem;
 }
 
 .sidebar {
